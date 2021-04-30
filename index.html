@@ -1,80 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Our association helps congolese children have a better future">
-    <meta name="keywords" content="orphanage, africa, congo, children">
-    <meta name="author" content="Lucía Cabanillas Buendía">
-    <meta name="copyright" content="Lucía Cabanillas Buendía">
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="style-elikia.css">
-    <title>Elikia Orphanage ♥</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Our association helps congolese children have a better future">
+  <meta name="keywords" content="orphanage, africa, congo, children">
+  <meta name="author" content="Lucía Cabanillas Buendía">
+  <meta name="copyright" content="Lucía Cabanillas Buendía">
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Elikia Orphanage ♥</title>
+</head>
 <body>
+
   <!-- HEADER -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>           
-       </ul>
-        <div>
-          <button type="button">Donate</button>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <nav class="navbar">
+            <ul class="nav">
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link active" href="#">Home</a></li>
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link" href="#">About Us</a></li>
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link" href="#contact">Contact</a></li>
+              <li class="d-md-none nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false">Menu</a>               
+                <div class="dropdown-menu">
+                  <a class="dropdown-item active" href="#">Home</a>
+                  <a class="dropdown-item" href="#">About us</a>
+                  <a class="dropdown-item" href="#contact">Contact</a>
+                </div>             
+              </li>            
+            </ul>
+            <div>
+              <button type="button" class="btn btn-success">Donate
+                <svg class="bi bi-check2-circle" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                  <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+                </svg>
+              </button>
+            </div>
+          </nav>
+          <div>
+            <h1 class="title text-center">Elikia Orphanage</h1>
+          </div>
         </div>
-    </nav>
-    <div>
-      <h1 class="title text-center">Elikia Orphanage</h1>
+      </div>
     </div>
   </header>
-  
-  <!-- MAIN -->
-  <div>
-    <section>
+
+  <!--MAIN-->
+  <div class="container-fluid">
+    <section class="row first-section">
       <!--ARTCILE 1-->
-      <article>
-        <a href="#">
-          <h2>Meet our children</h2>
-          <img src="img/meet.jpg" alt="a child with a ball">
-        </a>
+      <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 card">
+        <div class="card-body">
+          <a href="#">
+            <h2 class="text-center card-title">Meet our children</h2>
+            <img src="img/meet.jpg" class="img-fluid rounded card-img-bottom" alt="a child with a ball">
+          </a>
+          </div>
       </article>
       <!--ARTCILE 2-->
-      <article>
-        <a href="#">
-          <h2>Want to join us?</h2>
-          <img src="img/join.jpg" alt="People loading a truck">
-        </a>
+      <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 card">
+        <div class="card-body">
+          <a href="#">
+            <h2 class="text-center card-title">Want to join us?</h2>
+            <img src="img/join.jpg" class="img-fluid rounded card-img-bottom" alt="People loading a truck">
+          </a>
+        </div>
       </article>
       <!--ARTCILE 3-->
-      <article>
-        <a href="#">
-          <h2>Events</h2>
-          <img src="img/events.jpg" alt="People running indian race" >
-        </a>
+      <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 card">
+        <div class="card-body">
+          <a href="#">
+            <h2 class="text-center card-title">Events</h2>
+            <img src="img/events.jpg" class="img-fluid rounded card-img-bottom" alt="People running indian race" >
+          </a>
+        </div>
       </article>
     </section>
   
-    <section>
-      <h2 id="contact">Contact us</h2>
-        <div>
-          <p>If you have any inquiries, suggestions, send us an email to
-          <a href="mailto:elikia@orphanage.org">elikia@orphanage.org</a>
-          or phone us at
-          <a href="tel:+2420612345678">+242 06 12 34 56 78</a></p>
-        </div>
+    <section class="row second-section">
+      <div class="col-xs-12">
+        <h2 id="contact">Contact us</h2>
+          <div>
+            <p>If you have any inquiries, suggestions, send us an email to
+            <a href="mailto:elikia@orphanage.org">elikia@orphanage.org</a>
+            or phone us at
+            <a href="tel:+2420612345678">+242 06 12 34 56 78</a></p>
+          </div>
+      </div>
     </section>
   </div>
-
-  <!--FOOTER-->
+<!--FOOTER-->
   <footer>
-    <p>Author: Lucía Cabanillas Buendía - 
-    <a href="mailto:lucia@example.com">lucia@example.com</a></p>
+    <div class="container-fluid">
+      <p>Author: Lucía Cabanillas Buendía - 
+      <a href="mailto:lucia@example.com">lucia@example.com</a></p>
+    </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
