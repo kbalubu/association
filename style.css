@@ -1,0 +1,90 @@
+body {
+  background-color: rgb(243, 235, 217);
+}
+
+/*--- HEADER BACKGROUND IMAGE--- */
+/*Makes the backgound image cover for mobile devices*/
+header {
+  background: url("img/home.jpg") no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  min-width: 320px;
+}
+
+/*Image cover for tablet*/
+@media screen and (min-width: 768px) {
+  header {
+    background: url("img/home.jpg") no-repeat;
+    background-size: cover;
+    min-height: 500px;
+  }
+}
+
+/*Image cover for PC*/
+@media screen and (min-width: 992px) {
+  header {
+    background: url("img/home.jpg") no-repeat;
+    background-size: cover;
+    min-height: 700px;
+  }
+}
+
+.title {
+  color: rgb(243, 235, 217);
+  font-size: 10vw;
+  text-shadow: 1px 1px 2px black; 
+}
+
+/* --- NAVIGATION BAR --- */
+.navbar {
+    background-color: rgba(219, 207, 186, 0.5);
+ }
+ .nav-link {
+    color: rgb(243, 235, 217);
+    font-size: 1.3em;
+    text-shadow: 1px 1px 2px black;      
+}
+
+a.nav-link:hover { /* Changes color to orange when hovering */
+  color: rgb(255, 83, 73);
+}
+
+.dropdown-menu { /* Dropdown menu color */
+  background-color: rgba(219, 207, 186, 0.9);
+}
+
+/* --- ARTICLES --- */
+.rounded { /* All 3 images the same size */
+    width: 100%;
+    height: 300px;
+}
+
+.card { 
+  background-color: rgb(243, 235, 217);
+  border: none;
+  min-width: 320px;
+  transition: 0.6s;
+}
+
+.card a {
+  text-decoration: none;
+  color:rgb(255, 83, 73);
+}
+
+.card a:active { /* For all sizes when clicking the link, it becomes orange */
+  color: rgb(255, 165, 0);
+}
+  
+@media screen and (min-width: 992px) { /* Transition when passing the mouse over the card - for PC*/
+  .card {
+  background-color: rgb(243, 235, 217);
+  border: none;
+  opacity: 0.7;
+  min-width: 320px;
+  }
+  .card:hover { 
+    opacity: 1;
+    } 
+}
+
+
