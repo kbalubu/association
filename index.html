@@ -14,6 +14,9 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
     crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
   <title>Elikia Orphanage ♥</title>
 </head>
 <body>
@@ -26,28 +29,28 @@
           <nav class="navbar">
             <ul class="nav">
               <li class="nav-item d-none d-md-block">
-                <a class="nav-link active" href="#">Home</a></li>
+                <a class="nav-link page-font" href="#">Home</a></li>
               <li class="nav-item d-none d-md-block">
-                <a class="nav-link" href="#">About Us</a></li>
+                <a class="nav-link page-font" href="#">About Us</a></li>
               <li class="nav-item d-none d-md-block">
-                <a class="nav-link" href="#contact">Contact</a></li>
+                <a class="nav-link page-font" href="#contact">Contact</a></li>
               <li class="d-md-none nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle page-font"
                   data-toggle="dropdown"
                   href="#"
                   role="button"
                   aria-haspopup="true"
                   aria-expanded="false">Menu</a>               
                 <div class="dropdown-menu">
-                  <a class="dropdown-item active" href="#">Home</a>
-                  <a class="dropdown-item" href="#">About us</a>
-                  <a class="dropdown-item" href="#contact">Contact</a>
+                  <a class="dropdown-item active page-font" href="#">Home</a>
+                  <a class="dropdown-item page-font" href="#">About us</a>
+                  <a class="dropdown-item page-font" href="#contact">Contact</a>
                 </div>             
               </li>            
             </ul>
             <div>
-              <button type="button" class="btn btn-success">Donate
+              <button type="button" class="btn btn-success page-font">Donate
                 <svg class="bi bi-check2-circle" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                   <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
                   <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
@@ -56,7 +59,7 @@
             </div>
           </nav>
           <div>
-            <h1 class="title text-center">Elikia Orphanage</h1>
+            <h1 class="title text-center titles-font">Elikia Orphanage</h1>
           </div>
         </div>
       </div>
@@ -70,7 +73,7 @@
       <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 card">
         <div class="card-body">
           <a href="#">
-            <h2 class="text-center card-title">Meet our children</h2>
+            <h2 class="text-center card-title titles-font">Meet our children</h2>
             <img src="img/meet.jpg" class="img-fluid rounded card-img-bottom" alt="a child with a ball">
           </a>
           </div>
@@ -79,7 +82,7 @@
       <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 card">
         <div class="card-body">
           <a href="#">
-            <h2 class="text-center card-title">Want to join us?</h2>
+            <h2 class="text-center card-title titles-font">Want to join us?</h2>
             <img src="img/join.jpg" class="img-fluid rounded card-img-bottom" alt="People loading a truck">
           </a>
         </div>
@@ -88,7 +91,7 @@
       <article class="col-xs-12 col-sm-10 col-md-6 col-lg-4 card">
         <div class="card-body">
           <a href="#">
-            <h2 class="text-center card-title">Events</h2>
+            <h2 class="text-center card-title titles-font">Events</h2>
             <img src="img/events.jpg" class="img-fluid rounded card-img-bottom" alt="People running indian race" >
           </a>
         </div>
@@ -96,22 +99,38 @@
     </section>
   
     <section class="row second-section">
-      <div class="col-xs-12">
-        <h2 id="contact">Contact us</h2>
-          <div>
+      <div class="col-12 col-md-6 contact">
+        <h2 class="titles-font">Contact us</h2>
+          <div class="hide-content-small page-font">
             <p>If you have any inquiries, suggestions, send us an email to
-            <a href="mailto:elikia@orphanage.org">elikia@orphanage.org</a>
+            <a href="mailto:elikia@orphanage.org">elikia@orphanage.org</a><br>
             or phone us at
             <a href="tel:+2420612345678">+242 06 12 34 56 78</a></p>
           </div>
+          <div class="hide-content-big page-font">
+            <p>
+              <a href="mailto:elikia@orphanage.org">elikia@orphanage.org</a><br>
+              <a href="tel:+2420612345678">+242 06 12 34 56 78</a></p>
+          </div>
+          <div>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.883589718279!2d15.262679894434806!3d-4.441694434197681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3130fe066a8b%3A0x168b7e4e1f52378d!2sKinsasa%2C%20Rep%C3%BAblica%20Democr%C3%A1tica%20del%20Congo!5e0!3m2!1ses!2sfr!4v1619968865195!5m2!1ses!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
   </div>
+
 <!--FOOTER-->
   <footer>
-    <div class="container-fluid">
-      <p>Author: Lucía Cabanillas Buendía - 
-      <a href="mailto:lucia@example.com">lucia@example.com</a></p>
+    <div class="container-fluid page-font">
+      <p>&#169;2021 Lucía Cabanillas Buendía
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
