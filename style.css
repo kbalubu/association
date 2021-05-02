@@ -2,7 +2,18 @@ body {
   background-color: rgb(243, 235, 217);
 }
 
-/*--- HEADER BACKGROUND IMAGE--- */
+.titles-font {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  text-shadow: 2px 3px 3px rgba(0,0,0,0.3);
+}
+
+.page-font {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+}
+
+/*--- HEADER BACKGROUND IMAGE --- */
 /*Makes the backgound image cover for mobile devices*/
 header {
   background: url("img/home.jpg") no-repeat;
@@ -32,17 +43,19 @@ header {
 .title {
   color: rgb(243, 235, 217);
   font-size: 10vw;
-  text-shadow: 1px 1px 2px black; 
+  text-shadow: 2px 2px 3px black;
+  padding-top: 40px;
 }
 
 /* --- NAVIGATION BAR --- */
 .navbar {
-    background-color: rgba(219, 207, 186, 0.5);
+    background-color: rgba(219, 207, 186, 0.8);
  }
  .nav-link {
     color: rgb(243, 235, 217);
     font-size: 1.3em;
-    text-shadow: 1px 1px 2px black;      
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;    
 }
 
 a.nav-link:hover { /* Changes color to orange when hovering */
@@ -57,6 +70,7 @@ a.nav-link:hover { /* Changes color to orange when hovering */
 .rounded { /* All 3 images the same size */
     width: 100%;
     height: 300px;
+    box-shadow: 4px 3px 4px darkgray;
 }
 
 .card { 
@@ -64,6 +78,8 @@ a.nav-link:hover { /* Changes color to orange when hovering */
   border: none;
   min-width: 320px;
   transition: 0.6s;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card a {
@@ -87,4 +103,86 @@ a.nav-link:hover { /* Changes color to orange when hovering */
     } 
 }
 
+/* --- CONTACT --- */
+
+@media (min-width: 767px) { /* Shows small contact info when mobile devices are used */            
+  .hide-content-big {
+     display: none;
+  }
+}
+
+@media (max-width: 767px) { /* Shows full contact info on bigger screens */             
+  .hide-content-small {
+     display: none;
+  }
+}
+
+.second-section {
+  background-color:  rgb(161, 207, 107);
+  margin-top: 2em;
+  min-width: 320px;
+  padding-top: 10px;
+}
+
+iframe { /* Makes the map min 300px */
+  min-height: 350px;
+}
+
+/*Contact section for mobile devices*/
+.contact {
+  text-align: center;
+  color: white;
+  padding-top: 1em;
+}
+
+/*Contact section for tablet*/
+@media screen and (min-width: 768px) {
+  .contact {
+    text-align: center;
+    color: white;
+    padding-top: 4em;
+  }
+}
+
+/*Contact section for PC*/
+@media screen and (min-width: 992px) {
+  .contact {
+    text-align: center;
+    color: white;
+    padding-top: 6em;
+  }
+}
+
+/* CONTACT ICONS*/
+.fa {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.fa:active {
+  color: rgb(255, 165, 0);
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  background-color:  rgb(161, 207, 107);
+}
 
