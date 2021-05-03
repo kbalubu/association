@@ -26,7 +26,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <nav class="navbar">
+          <nav class="navbar" id="navbar">
             <ul class="nav">
               <li class="nav-item d-none d-md-block">
                 <a class="nav-link page-font" href="index.html">Home</a></li>
@@ -43,7 +43,7 @@
                   aria-haspopup="true"
                   aria-expanded="false">Menu</a>               
                 <div class="dropdown-menu">
-                  <a class="dropdown-item active page-font" href="index.html">Home</a>
+                  <a class="dropdown-item page-font" href="index.html">Home</a>
                   <a class="dropdown-item page-font" href="#">About us</a>
                   <a class="dropdown-item page-font" href="#contact">Contact</a>
                 </div>             
@@ -67,27 +67,11 @@
   </header>
 
   <!--MAIN-->
-  <div class="container-fluid">
-    <section class="row first-section">
-      <!--ARTCILE 1-->
-      <article class="col-12">
-        
-      </article>
-      <!--ARTCILE 2-->
-      <article class="col-12">
-        
-      </article>
-      <!--ARTCILE 3-->
-      <article class="col-12">
-        
-      </article>
-    </section>
-
-    <!-- Test carrousel-->
+    <!-- Carrousel-->
     <div class="bd-example">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <h2 class="events-title">Events</h2>
-      <p class="page-font">These are our coming events, feel free to come, we wait for you!</p>
+      <p class="page-font">These are our coming events, feel free to come and meet our children!</p>
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -99,7 +83,7 @@
             <div class="carousel-caption">
               <h3 class="titles-font carrousel-info">Color Run</h3>
               <p class="page-font carrousel-info">May 7, 2021 - 10AM Madzi Square</p>
-              <p class="d-none d-md-block page-font carrousel-info">We wait for you to have fun on this 5km colorful run</p>
+              <p class="d-none d-md-block page-font carrousel-info">Have fun on this 5km colorful run</p>
             </div>
           </div>
           <div class="carousel-item">
@@ -107,7 +91,7 @@
             <div class="carousel-caption">
               <h3 class="titles-font carrousel-info">Open Air Concert</h3>
               <p class="page-font carrousel-info">June 22, 2021 - 19PM</p>
-              <p class="d-none d-md-block page-font carrousel-info">Come to our freewill concert, all sums collected will go to our children in the orphanage</p>
+              <p class="d-none d-md-block page-font carrousel-info">Free-will concert, all sums collected will go to our children in the orphanage</p>
             </div>
           </div>
           <div class="carousel-item">
@@ -128,11 +112,11 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </div>
-  
+
+    <!-- Contact -->
     <section class="row second-section">
       <div class="col-12 col-md-6 contact">
-        <h2 class="titles-font">Contact us</h2>
+        <h2 class="titles-font" id="contact">Contact us</h2>
           <div class="hide-content-small page-font">
             <p>If you have any inquiries, suggestions, send us an email to
             <a href="mailto:elikia@orphanage.org">elikia@orphanage.org</a><br>
@@ -156,8 +140,12 @@
           height="100%"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.883589718279!2d15.262679894434806!3d-4.441694434197681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3130fe066a8b%3A0x168b7e4e1f52378d!2sKinsasa%2C%20Rep%C3%BAblica%20Democr%C3%A1tica%20del%20Congo!5e0!3m2!1ses!2sfr!4v1619968865195!5m2!1ses!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
+      <div>
+        <button type="button" class="btn btn-primary btn-sm page-font top">
+          <a href="#navbar">Back to top</a>
+        </button>
+       </div>
     </section>
-  </div>
 
 <!--FOOTER-->
   <footer>

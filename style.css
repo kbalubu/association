@@ -162,6 +162,11 @@ iframe { /* Makes the map min 300px */
   margin-bottom: 10px;
 }
 
+a.fa:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .fa:active {
   color: rgb(255, 165, 0);
 }
@@ -226,4 +231,15 @@ footer {
 
 .carrousel-info {
   text-shadow: 2px 2px 2px brown;
+}
+
+.top { /* Styles the "back to top" button */
+  position: relative;
+  left: 100%;
+  margin-top: 10px;
+}
+
+.top a{ /* Styles the "back to top" anchor button */
+  text-decoration: none;
+  color: white;
 }
