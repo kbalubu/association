@@ -11,6 +11,7 @@ body {
 .page-font {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.2em;
+  text-align: center;
 }
 
 /*--- HEADER BACKGROUND IMAGE --- */
@@ -186,3 +187,43 @@ footer {
   background-color:  rgb(161, 207, 107);
 }
 
+/* - - - E V E N T S - - - */
+
+.events-title {
+  color: rgb(255, 83, 73);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 3px 3px rgba(0,0,0,0.3);
+  text-align: center;
+  margin: 15px;
+}
+
+/*Events section for mobile devices*/
+.events-img {
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Events section for tablet*/
+@media screen and (min-width: 768px) {
+  .events-img {
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*Events section for PC*/
+@media screen and (min-width: 992px) {
+  .events-img {
+    max-height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.carrousel-info {
+  text-shadow: 2px 2px 2px brown;
+}
